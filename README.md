@@ -11,51 +11,7 @@ The most advanced open-source Content Management Framework to build powerful API
 [![GitHub release](https://img.shields.io/github/release/strapi/strapi-docker.svg?style=for-the-badge)](https://github.com/strapi/strapi-docker/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/strapi/strapi.svg?style=for-the-badge)](https://hub.docker.com/r/strapi/strapi)
 
-## Quickstart (recommended)
-
-> [Read the Medium post to have full explaination](https://medium.com/@lucaperret/strapi-quickstart-with-docker-d77ca7c86c1f)
-
-1. `git clone https://github.com/strapi/strapi-docker && cd strapi-docker`
-2. Run using `docker-compose up`
-
-## Pull from Docker Hub
-
-```bash
-docker pull strapi/strapi
-```
-
-### Then run image
-
-Start a database (e.g. MongoDB)
-
-```bash
-docker run -e MONGO_INITDB_DATABASE=strapi \
-           -v `pwd`/db/:/data/db \
-           --name strapi-mongo \
-           -d mongo
-```
-
-Start strapi
-
-```bash
-docker run -e APP_NAME=strapi-app \
-           -e DATABASE_CLIENT=mongo \
-           -e DATABASE_HOST=strapi-mongo \
-           -e DATABASE_PORT=27017 \
-           -e DATABASE_NAME=strapi \
-           -v `pwd`/strapi-app:/usr/src/api/strapi-app \
-           --link strapi-mongo:mongo \
-           -p 1337:1337 \
-           --name strapi -d strapi/strapi
-```
-
-You should the be able to access your Strapi installation at [localhost:1337](http://localhost:1337).
-
-## Use as base image
-
-```Dockerfile
-FROM strapi/strapi
-```
+## Imagen de STRAPI modificada para utilizar en Kubernetes
 
 ## Environment variables
 
