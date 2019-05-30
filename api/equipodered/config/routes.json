@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/equipodereds",
+      "handler": "Equipodered.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/equipodereds/count",
+      "handler": "Equipodered.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/equipodereds/:_id",
+      "handler": "Equipodered.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/equipodereds",
+      "handler": "Equipodered.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/equipodereds/:_id",
+      "handler": "Equipodered.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/equipodereds/:_id",
+      "handler": "Equipodered.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

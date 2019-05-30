@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "equipodered",
+  "info": {
+    "name": "equipodered",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Serie": {
+      "type": "integer"
+    },
+    "Conectado": {
+      "type": "boolean"
+    },
+    "Nombre": {
+      "type": "string"
+    }
+  }
+}
