@@ -4,7 +4,7 @@
     "default": {
       "settings": {
         "client": "mongo",
-        "host": "db",
+        "host": "127.0.0.1",
         "srv": false,
         "port": "27017",
         "database": "strapi",
