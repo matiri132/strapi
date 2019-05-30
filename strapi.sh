@@ -27,6 +27,9 @@ then
     npm install --prefix ./$APP_NAME
 fi
 
+cp -r strapi-app1/public strapi-app/
+cp -r strapi-app1/api strapi-app/
+
 cd $APP_NAME
 strapi start &
 
