@@ -29,6 +29,8 @@ fi
 
 cp -r strapi-app1/public strapi-app/
 cp -r strapi-app1/api strapi-app/
+cp -r strapi-app1/node_modules strapi-app/
+cp -r strapi-app1/admin strapi-app/
 
 cd $APP_NAME
 strapi start &
